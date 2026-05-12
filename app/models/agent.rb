@@ -4,5 +4,5 @@ class Agent < ApplicationRecord
   has_many :skills, through: :agent_skills
 
   validates :codename, presence: true, uniqueness: true
-  validates :level, presence: true, numericality: { only_integer: true, greater_then_or_equal_to: 1, less_than_or_equal_to: 10 }
+  validates :level, presence: true, numericality: { only_integer: true, greater_than_or_equal_to: 1, less_than_or_equal_to: 10 }
 end
